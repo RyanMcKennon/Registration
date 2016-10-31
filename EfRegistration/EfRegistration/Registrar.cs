@@ -84,13 +84,13 @@ namespace EfRegistration
             return data.deleteCourse(id);
         }
 
-        public List<Student> StudentsEnrolledInCourse(int id)
+        public List<Student> StudentsEnrolledInCourse(int courseID)
         {
             var result = db.Enrollments.Join(db.Students,
                                             enroll   => enroll.StudentID,
                                             stud     => stud.StudentID,
                                             (Enrollment,Student) => new {Enrollment = Enrollment, Student = Student})
-                                            .Where(x => x.Enrollment.CourseID == id).ToList();
+                                            .Where(x => x.Enrollment.CourseID == courseID).ToList();
 
             List<Student> studentsInCourse = new List<Student>();
 
@@ -105,6 +105,48 @@ namespace EfRegistration
                 
             }
             return studentsInCourse;
+        }
+
+        public List<Course> GetStudentSchedule(int studentId)
+        {
+            var result = db.Enrollments.Join(db.Courses,
+                                             enroll => enroll.CourseID,
+                                             course => course.CourseID,
+                                             (Enrollment, Course) => new { Enrollment = Enrollment, Course = Course })
+                                             .Where(x => x.Enrollment.StudentID == studentId).ToList();
+
+            List<Course> Schedule = new List<Course>();
+
+            for (int i = 0; i < result.Count; i++)
+            {
+                Schedule.Add(new Course()
+                {
+                    CourseID = result[i].Course.CourseID,
+                    CourseNumber = result[i].Course.CourseNumber,
+                    CourseName = result[i].Course.CourseName,
+                    ProfessorID = result[i].Course.ProfessorID,
+                    BuildingID = result[i].Course.BuildingID,
+                    StartClassTime = result[i].Course.StartClassTime,
+                    EndClassTime = result[i].Course.EndClassTime,
+                    maxStudents = result[i].Course.maxStudents,
+                    CourseFull = result[i].Course.CourseFull,
+                    Active = result[i].Course.Active
+                });
+            }
+            return Schedule;
+        } 
+
+        public bool RemoveStudent(int id)
+        {
+            var data = new EfDelete();
+            return data.deleteStudent(id);
+        }
+
+        public bool AddStudent(string firstName, string lastName, string major, bool active)
+        {
+            var data = new EfInserts();
+            Student student = new Student() { StudentFirstName = firstName, StudentLastName = lastName, Major = major, Active = active };
+            return data.InsertStudent(student);
         }
     }
 }

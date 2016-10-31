@@ -81,5 +81,30 @@ namespace RegistrationTests
 
             Assert.Equal(expected, actual.Count);
         }
+
+        [Fact]
+        public void Test_GetStudentSchedule()
+        {
+            var data = new Registrar();
+            var expected = 1;
+            var actual = data.GetStudentSchedule(6);
+
+            Assert.Equal(expected, actual.Count);
+        }
+
+        [Fact]
+        public void Test_AddStudent()
+        {
+            var data = new Registrar();
+            var actual = data.AddStudent("Kyle", "James", "Science", true);
+
+            Assert.True(actual);
+        }
+
+        [Fact]
+        public void Test_RemoveStudent()
+        {
+            
+        }
     }
 }
