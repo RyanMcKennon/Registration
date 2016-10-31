@@ -46,7 +46,7 @@ namespace EfRegistration
         public bool updateClassRoom(ClassRoom classroom)
         {
             int test = 0;
-            var result = db.ClassRooms.SingleOrDefault(b => b.ClassRoomID == classroom.ClassRoomID);
+            var result = db.ClassRooms.SingleOrDefault(b => b.RoomID == classroom.RoomID);
             if (result != null)
             {
                 if (classroom.CourseID != null)

@@ -62,11 +62,12 @@ namespace RegistrationTests
             Assert.True(actual);
         }
 
+        // change naming scheme in database for classroom id and room id.
         [Fact]
         public void Test_ClassRoomInsert()
         {
             var data = new EfInserts();
-            var expected = new ClassRoom() {CourseID = 1, BuildingID = 1, RoomNumber = 101, StartClassTime = TimeSpan.Parse("2:00"), EndClassTime = TimeSpan.Parse("2:50") };
+            var expected = new ClassRoom() {CourseID = 1, BuildingID = 2, RoomNumber = 101, StartClassTime = TimeSpan.Parse("2:00"), EndClassTime = TimeSpan.Parse("2:50") };
             var actual = data.InsertClassRoom(expected);
 
             Assert.True(actual);

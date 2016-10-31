@@ -37,6 +37,7 @@
           <Property Name="StartClassTime" Type="time" Precision="7" Nullable="false" />
           <Property Name="EndClassTime" Type="time" Precision="7" Nullable="false" />
           <Property Name="CourseFull" Type="bit" />
+          <Property Name="Active" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Enrollment">
           <Key>
@@ -248,6 +249,7 @@
           <Property Name="StartClassTime" Type="Time" Nullable="false" Precision="7" />
           <Property Name="EndClassTime" Type="Time" Nullable="false" Precision="7" />
           <Property Name="CourseFull" Type="Boolean" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Building" Relationship="Self.FK_Registraton_Building" FromRole="Course" ToRole="Building" />
           <NavigationProperty Name="ClassRooms" Relationship="Self.FK_Registraton_CourseID" FromRole="Course" ToRole="ClassRoom" />
           <NavigationProperty Name="Enrollments" Relationship="Self.FK_Registraton_CourseID_Forentrollment" FromRole="Course" ToRole="Enrollment" />
@@ -465,6 +467,7 @@
                 <ScalarProperty Name="StartClassTime" ColumnName="StartClassTime" />
                 <ScalarProperty Name="EndClassTime" ColumnName="EndClassTime" />
                 <ScalarProperty Name="CourseFull" ColumnName="CourseFull" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

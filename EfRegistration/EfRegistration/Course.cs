@@ -30,6 +30,7 @@ namespace EfRegistration
         public System.TimeSpan StartClassTime { get; set; }
         public System.TimeSpan EndClassTime { get; set; }
         public Nullable<bool> CourseFull { get; set; }
+        public bool Active { get; set; }
     
         public virtual Building Building { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
