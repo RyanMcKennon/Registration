@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeleteTests.cs" />
+    <Compile Include="GetTests.cs" />
     <Compile Include="InsertTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrarTest.cs" />

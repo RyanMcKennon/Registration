@@ -61,6 +61,7 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="EfDeletes.cs" />
+    <Compile Include="EfGetMethods.cs" />
     <Compile Include="EfInserts.cs" />
     <Compile Include="EfUpdate.cs" />
     <Compile Include="Enrollment.cs">
@@ -92,6 +93,7 @@
     <Compile Include="Student.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="StudentFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
