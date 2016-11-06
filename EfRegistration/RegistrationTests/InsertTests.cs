@@ -76,10 +76,10 @@ namespace RegistrationTests
         public void Test_EnrollmentInsert()
         {
             var data = new EfInserts();
-            var expected = new Enrollment() { StudentID = 2, CourseID = 1, CourseName = "Math", CourseNumber = 1101, ClassStartTime = TimeSpan.Parse("2:00") };
+            var expected = new Enrollment() { StudentID = 7, CourseID = 1, CourseName = "Math", CourseNumber = 1101, ClassStartTime = TimeSpan.Parse("2:00") };
             var actual = data.insertEnrollment(expected);
 
-            Assert.False(actual);
+            Assert.True(actual);
         }
 
     }

@@ -19,6 +19,16 @@ namespace RegistrationTests
 
             Assert.True(actual);
         }
+
+        [Fact]
+        public void Test_DeleteEnrollment()
+        {
+            var data = new EfDelete();
+            var expected = 3;
+            var actual = data.deleteEnrollment(expected);
+
+            Assert.True(actual);
+        }
         
     }
 }

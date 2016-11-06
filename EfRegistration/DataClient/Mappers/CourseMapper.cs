@@ -25,7 +25,7 @@ namespace RegistrationDataClient.Mappers
         }
 
 
-        public static Course MapToCourseDAO(CourseDAO course)
+        public static Course MapToCourse(CourseDAO course)
         {
             var c = new Course();
             c.CourseID = course.id;

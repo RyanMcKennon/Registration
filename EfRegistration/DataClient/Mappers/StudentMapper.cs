@@ -10,7 +10,7 @@ namespace RegistrationDataClient.Mappers
 {
     public class StudentMapper
     {
-        public static StudentDAO MapToStudentDAO (Student student)
+        public static StudentDAO MapToStudentDAO(Student student)
         {
             var stud = new StudentDAO();
             stud.id = student.StudentID;
@@ -20,7 +20,7 @@ namespace RegistrationDataClient.Mappers
             return stud;
         }
 
-        public static Student MapToStudent (StudentDAO student)
+        public static Student MapToStudent(StudentDAO student)
         {
             var stud = new Student();
             stud.StudentID = student.id;

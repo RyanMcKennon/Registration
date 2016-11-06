@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationWeb.Logic", "RegistrationWeb.Logic\RegistrationWeb.Logic.csproj", "{6F37330A-147F-49B7-AFEA-3471C19A9389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationWeb.Client", "RegistrationWeb.Client\RegistrationWeb.Client.csproj", "{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F37330A-147F-49B7-AFEA-3471C19A9389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F37330A-147F-49B7-AFEA-3471C19A9389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F37330A-147F-49B7-AFEA-3471C19A9389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F37330A-147F-49B7-AFEA-3471C19A9389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

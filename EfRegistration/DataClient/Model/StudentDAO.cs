@@ -19,7 +19,6 @@ namespace RegistrationDataClient.Model
         [DataMember]
         public string Major { get; set; }
         [DataMember]
-        public List<CourseDAO> Courses {get; set;}
-        [DataMember]
+        public List<CourseDAO> Courses { get; set; }
     }
 }

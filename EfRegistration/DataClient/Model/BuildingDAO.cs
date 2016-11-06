@@ -15,6 +15,6 @@ namespace RegistrationDataClient.Model
         [DataMember]
         public string Name { get; set; }
         [DataMember]
-        public List<RoomDAO> Rooms {get;set;}
+        public List<RoomDAO> Rooms { get; set; }
     }
 }

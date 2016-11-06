@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RegistrationDataClient")]
+[assembly: AssemblyTitle("RegistrationWeb.Logic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RegistrationDataClient")]
+[assembly: AssemblyProduct("RegistrationWeb.Logic")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("03d89d20-3fa9-4cd6-b37c-ef8f36e66876")]
+[assembly: Guid("6f37330a-147f-49b7-afea-3471c19a9389")]
 
 // Version information for an assembly consists of the following four values:
 //
