@@ -17,6 +17,9 @@ namespace DataClient
         List<StudentDAO> GetStudents();
 
         [OperationContract]
+        StudentDAO GetStudentByID(int id);
+
+        [OperationContract]
         List<CourseDAO> GetCourses();
 
         [OperationContract]
@@ -33,5 +36,14 @@ namespace DataClient
 
         [OperationContract]
         List<StudentDAO> getCourseRoster(int courseid);
+
+        [OperationContract]
+        bool dropCourseFromStudent(StudentDAO student, CourseDAO course);
+
+        [OperationContract]
+        bool RemoveStudent(int id);
+
+        [OperationContract]
+        bool RemoveCourse(int id);
     }
 }

@@ -20,6 +20,7 @@ namespace DataClient
         private EfGetMethods GetData = new EfGetMethods();
         private EfUpdate UpdateData = new EfUpdate();
         private Registrar registrar = new Registrar();
+        private StudentFunctions studentstuff = new StudentFunctions();
 
         public List<StudentDAO> GetStudents()
         {
@@ -29,6 +30,11 @@ namespace DataClient
                 data.Add(StudentMapper.MapToStudentDAO(student));
             }
             return data;
+        }
+
+        public StudentDAO GetStudentByID(int id)
+        {
+            return StudentMapper.MapToStudentDAO(GetData.GetStudentByID(id));
         }
 
         public List<CourseDAO> GetCourses()
@@ -64,6 +70,11 @@ namespace DataClient
             return InsertData.insertEnrollment(enroll);
         }
 
+        public bool dropCourseFromStudent(StudentDAO student, CourseDAO course)
+        {
+            return studentstuff.dropCourse(StudentMapper.MapToStudent(student), CourseMapper.MapToCourse(course));
+        }
+
         public List<CourseDAO> getStudentSchedule(int studentid)
         {
             var data = new List<CourseDAO>();
@@ -83,6 +94,16 @@ namespace DataClient
                 data.Add(StudentMapper.MapToStudentDAO(student));
             }
             return data;
+        }
+
+        public bool RemoveStudent(int id)
+        {
+            return registrar.RemoveStudent(id);
+        }
+
+        public bool RemoveCourse(int id)
+        {
+            return registrar.RemoveCourse(id);
         }
     }
 }

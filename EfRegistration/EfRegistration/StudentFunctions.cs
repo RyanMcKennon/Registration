@@ -34,7 +34,7 @@ namespace EfRegistration
             Enrollment enroll = new Enrollment();
             enroll.StudentID = student.StudentID;
             enroll.CourseName = course.CourseName;
-            var enrollmentToDrop = db.Enrollments.Where(x => x.StudentID == enroll.StudentID && x.CourseName == enroll.CourseName).FirstOrDefault();
+            var enrollmentToDrop = db.Enrollments.FirstOrDefault(x => x.StudentID == enroll.StudentID && x.CourseName == enroll.CourseName);
             return data.deleteEnrollment(enrollmentToDrop.EnrollmentID);
         }
         

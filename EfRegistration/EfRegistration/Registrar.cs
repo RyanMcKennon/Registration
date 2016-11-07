@@ -142,6 +142,12 @@ namespace EfRegistration
             return data.deleteStudent(id);
         }
 
+        public bool RemoveCourse(int id)
+        {
+            var data = new EfDelete();
+            return data.deleteCourse(id);
+        }
+
         public bool AddStudent(string firstName, string lastName, string major, bool active)
         {
             var data = new EfInserts();

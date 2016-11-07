@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationWeb.Logic", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationWeb.Client", "RegistrationWeb.Client\RegistrationWeb.Client.csproj", "{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTests", "WebTests\WebTests.csproj", "{87956455-768F-42AA-9725-031C09C63F05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B128CD53-BB8B-45BC-9CB0-52EA6D9C6077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87956455-768F-42AA-9725-031C09C63F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87956455-768F-42AA-9725-031C09C63F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87956455-768F-42AA-9725-031C09C63F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87956455-768F-42AA-9725-031C09C63F05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

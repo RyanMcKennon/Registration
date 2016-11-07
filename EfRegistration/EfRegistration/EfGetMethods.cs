@@ -51,7 +51,10 @@ namespace EfRegistration
             return db.ClassRooms.ToList();
         }
 
-
+        public Student GetStudentByID(int id)
+        {
+            return db.Students.FirstOrDefault(x => x.StudentID == id);
+        }
 
     }
 }
