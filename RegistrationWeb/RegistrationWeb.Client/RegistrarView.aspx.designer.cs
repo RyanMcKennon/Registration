@@ -301,6 +301,33 @@ namespace RegistrationWeb.Client {
         protected global::System.Web.UI.WebControls.Button closelist;
         
         /// <summary>
+        /// capacity_div control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl capacity_div;
+        
+        /// <summary>
+        /// maxstudents_label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label maxstudents_label;
+        
+        /// <summary>
+        /// maxstudents_textbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox maxstudents_textbox;
+        
+        /// <summary>
         /// addremovestudentdiv control.
         /// </summary>
         /// <remarks>

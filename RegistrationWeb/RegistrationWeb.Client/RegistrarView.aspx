@@ -61,6 +61,10 @@
             <asp:Button runat="server" ID="studentsenrolled_button" Text="Show enrolled students" OnClick="DisplayEnrolled" />
             <asp:Button runat="server" ID="closelist" Text="Close List" OnClick="CloseCourseList" />
         </div>
+        <div visible="false" runat="server" id="capacity_div">
+            <asp:Label runat="server" ID="maxstudents_label" Text="Modify Capacity"></asp:Label>
+            <asp:TextBox runat="server" ID="maxstudents_textbox"></asp:TextBox>
+        </div>
     </div>
 
 

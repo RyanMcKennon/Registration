@@ -67,5 +67,15 @@ namespace RegistrationWeb.Logic
         {
             return sc.RemoveCourse(id);
         }
+
+        public bool ModifyCapacity(int id, int capacity)
+        {
+            return sc.ModifyCapacity(id, capacity);
+        }
+
+        public bool ModifyTime(int id, string startTime, string endTime)
+        {
+            return sc.ModifyCourseTime(id, startTime, endTime);
+        }
     }
 }

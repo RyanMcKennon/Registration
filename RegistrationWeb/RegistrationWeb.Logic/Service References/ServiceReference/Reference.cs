@@ -595,6 +595,18 @@ namespace RegistrationWeb.Logic.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RemoveCourse", ReplyAction="http://tempuri.org/IService/RemoveCourseResponse")]
         System.Threading.Tasks.Task<bool> RemoveCourseAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModifyCapacity", ReplyAction="http://tempuri.org/IService/ModifyCapacityResponse")]
+        bool ModifyCapacity(int id, int capacity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModifyCapacity", ReplyAction="http://tempuri.org/IService/ModifyCapacityResponse")]
+        System.Threading.Tasks.Task<bool> ModifyCapacityAsync(int id, int capacity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModifyCourseTime", ReplyAction="http://tempuri.org/IService/ModifyCourseTimeResponse")]
+        bool ModifyCourseTime(int id, string startTime, string endTime);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ModifyCourseTime", ReplyAction="http://tempuri.org/IService/ModifyCourseTimeResponse")]
+        System.Threading.Tasks.Task<bool> ModifyCourseTimeAsync(int id, string startTime, string endTime);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -710,6 +722,22 @@ namespace RegistrationWeb.Logic.ServiceReference {
         
         public System.Threading.Tasks.Task<bool> RemoveCourseAsync(int id) {
             return base.Channel.RemoveCourseAsync(id);
+        }
+        
+        public bool ModifyCapacity(int id, int capacity) {
+            return base.Channel.ModifyCapacity(id, capacity);
+        }
+        
+        public System.Threading.Tasks.Task<bool> ModifyCapacityAsync(int id, int capacity) {
+            return base.Channel.ModifyCapacityAsync(id, capacity);
+        }
+        
+        public bool ModifyCourseTime(int id, string startTime, string endTime) {
+            return base.Channel.ModifyCourseTime(id, startTime, endTime);
+        }
+        
+        public System.Threading.Tasks.Task<bool> ModifyCourseTimeAsync(int id, string startTime, string endTime) {
+            return base.Channel.ModifyCourseTimeAsync(id, startTime, endTime);
         }
     }
 }

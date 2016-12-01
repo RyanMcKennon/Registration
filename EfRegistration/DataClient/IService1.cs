@@ -45,5 +45,11 @@ namespace DataClient
 
         [OperationContract]
         bool RemoveCourse(int id);
+
+        [OperationContract]
+        bool ModifyCapacity(int id, int capacity);
+
+        [OperationContract]
+        bool ModifyCourseTime(int id, string startTime, string endTime);
     }
 }

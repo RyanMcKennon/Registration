@@ -73,6 +73,18 @@
   <wsdl:message name="IService_RemoveCourse_OutputMessage">
     <wsdl:part name="parameters" element="tns:RemoveCourseResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_ModifyCapacity_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCapacity" />
+  </wsdl:message>
+  <wsdl:message name="IService_ModifyCapacity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCapacityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ModifyCourseTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCourseTime" />
+  </wsdl:message>
+  <wsdl:message name="IService_ModifyCourseTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCourseTimeResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="GetStudents">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetStudents" message="tns:IService_GetStudents_InputMessage" />
@@ -117,6 +129,14 @@
     <wsdl:operation name="RemoveCourse">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/RemoveCourse" message="tns:IService_RemoveCourse_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/RemoveCourseResponse" message="tns:IService_RemoveCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCapacity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ModifyCapacity" message="tns:IService_ModifyCapacity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ModifyCapacityResponse" message="tns:IService_ModifyCapacity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCourseTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ModifyCourseTime" message="tns:IService_ModifyCourseTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ModifyCourseTimeResponse" message="tns:IService_ModifyCourseTime_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
@@ -213,6 +233,24 @@
     </wsdl:operation>
     <wsdl:operation name="RemoveCourse">
       <soap:operation soapAction="http://tempuri.org/IService/RemoveCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCapacity">
+      <soap:operation soapAction="http://tempuri.org/IService/ModifyCapacity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCourseTime">
+      <soap:operation soapAction="http://tempuri.org/IService/ModifyCourseTime" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

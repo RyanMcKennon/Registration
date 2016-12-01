@@ -22,6 +22,15 @@ namespace DataClient
         private Registrar registrar = new Registrar();
         private StudentFunctions studentstuff = new StudentFunctions();
 
+
+        public bool ModifyCapacity(int id, int capacity)
+        {
+            return registrar.ModifyCapacity(id, capacity);
+        }
+        public bool ModifyCourseTime(int id, string startTime, string endTime)
+        {
+            return registrar.ModifyCourseTime(id, startTime, endTime);
+        }
         public List<StudentDAO> GetStudents()
         {
             var data = new List<StudentDAO>();
