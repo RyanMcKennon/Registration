@@ -27,7 +27,7 @@ namespace RegistrationWeb.Client
             }
             else
             {
-                string myStringVariable = "You've entered invalid data";
+                string myStringVariable = "You've entered invalid data2";
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + myStringVariable + "');", true);
             }
 
