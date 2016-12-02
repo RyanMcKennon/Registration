@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EfRegistration
 {
-    //trying push
+    //lits
     //to do
     // make a bookmark feature later in the UI
     public class StudentFunctions
