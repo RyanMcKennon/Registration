@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace RegistrationDataClient.Model
 {
+    //asdsa
     [DataContract]
     public class BuildingDAO
     {
