@@ -63,24 +63,24 @@ namespace RegistrationTests
         }
 
         // change naming scheme in database for classroom id and room id.
-        [Fact]
-        public void Test_ClassRoomInsert()
-        {
-            var data = new EfInserts();
-            var expected = new ClassRoom() {CourseID = 1, BuildingID = 2, RoomNumber = 101, StartClassTime = TimeSpan.Parse("2:00"), EndClassTime = TimeSpan.Parse("2:50") };
-            var actual = data.InsertClassRoom(expected);
+        //[Fact]
+        //public void Test_ClassRoomInsert()
+        //{
+        //    var data = new EfInserts();
+        //    var expected = new ClassRoom() {CourseID = 1, BuildingID = 2, RoomNumber = 101, StartClassTime = TimeSpan.Parse("2:00"), EndClassTime = TimeSpan.Parse("2:50") };
+        //    var actual = data.InsertClassRoom(expected);
 
-            Assert.True(actual);
-        }
-        [Fact]
-        public void Test_EnrollmentInsert()
-        {
-            var data = new EfInserts();
-            var expected = new Enrollment() { StudentID = 7, CourseID = 1, CourseName = "Math", CourseNumber = 1101, ClassStartTime = TimeSpan.Parse("2:00") };
-            var actual = data.insertEnrollment(expected);
+        //    Assert.True(actual);
+        //}
+        //[Fact]
+        //public void Test_EnrollmentInsert()
+        //{
+        //    var data = new EfInserts();
+        //    var expected = new Enrollment() { StudentID = 7, CourseID = 1, CourseName = "Math", CourseNumber = 1101, ClassStartTime = TimeSpan.Parse("2:00") };
+        //    var actual = data.insertEnrollment(expected);
 
-            Assert.True(actual);
-        }
+        //    Assert.True(actual);
+        //}
 
     }
 }

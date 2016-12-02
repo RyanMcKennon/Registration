@@ -10,25 +10,25 @@ namespace RegistrationTests
 {
     public class DeleteTests
     {   
-        [Fact]
-        public void Test_DeleteStudent()
-        {
-            var data = new EfDelete();
-            var expected = 1;
-            var actual = data.deleteStudent(expected);
+        //[Fact]
+        //public void Test_DeleteStudent()
+        //{
+        //    var data = new EfDelete();
+        //    var expected = 1;
+        //    var actual = data.deleteStudent(expected);
 
-            Assert.True(actual);
-        }
+        //    Assert.True(actual);
+        //}
 
-        [Fact]
-        public void Test_DeleteEnrollment()
-        {
-            var data = new EfDelete();
-            var expected = 3;
-            var actual = data.deleteEnrollment(expected);
+        //[Fact]
+        //public void Test_DeleteEnrollment()
+        //{
+        //    var data = new EfDelete();
+        //    var expected = 3;
+        //    var actual = data.deleteEnrollment(expected);
 
-            Assert.True(actual);
-        }
+        //    Assert.True(actual);
+        //}
         
     }
 }
